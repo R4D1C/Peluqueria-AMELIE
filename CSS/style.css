@@ -216,6 +216,18 @@ h3 {
     width: 20%;
 }
 
+@media only screen and (max-width: 768px) {
+    .trabajos__foto{
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .trabajos__texto {
+        font-size: 16px;
+    }
+}
+
 .contactoBG {
     background-image: url(../IMG/girl-2120196_1920.jpg);
     height: 40rem;
