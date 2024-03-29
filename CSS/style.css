@@ -205,6 +205,13 @@ h3 {
     margin: 8rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .trabajos-contenedor{
+        margin: 1rem;
+        display: block;
+    }
+}
+
 .trabajos__foto {
     width: 20%;
 }
