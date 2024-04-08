@@ -179,7 +179,10 @@ h3 {
 }
 
 .testis {
-  margin: 12rem auto;
+  margin: 8rem auto;
+}
+.testis h3 {
+  text-align: center;
 }
 .testis .testi {
   display: flex;
@@ -222,15 +225,15 @@ h3 {
   padding-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-  .sobreMi {
-    display: flex;
-  }
-}
 .sobreMi {
+  display: flex;
   gap: 2rem;
-  align-items: center;
-  margin: 10rem 0 10rem 0.1rem;
+  margin: 10rem auto;
+}
+@media only screen and (max-width: 768px) {
+  .sobreMi {
+    display: block;
+  }
 }
 .sobreMi .sobreMi__foto {
   size: 30%;
@@ -243,26 +246,26 @@ h3 {
 .trabajos-contenedor {
   margin: 8rem;
 }
-.trabajos-contenedor .trabajos__foto {
-  width: 20%;
-}
-
 @media only screen and (max-width: 768px) {
-  .trabajos-contenedor {
+  .trabajos-contenedor .trabajos-contenedor {
     margin: 1rem;
     display: block;
   }
 }
+.trabajos-contenedor .trabajos__foto {
+  width: 20%;
+}
 @media only screen and (max-width: 768px) {
-  .trabajos__foto {
+  .trabajos-contenedor .trabajos__foto {
     margin: 1rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  .trabajos__texto {
+  .trabajos-contenedor .trabajos__texto {
     font-size: 16px;
   }
 }
+
 .contactoBG {
   background-image: url(../IMG/girl-2120196_1920.jpg);
   height: 40rem;
