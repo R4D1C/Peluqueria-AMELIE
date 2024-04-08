@@ -1,0 +1,294 @@
+@charset "UTF-8";
+:root {
+  --blanco: #fff;
+  --negro: #000;
+  --gris: #D5D8DC;
+}
+
+.fuente {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuentePequeña {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+img {
+  max-width: 100%;
+}
+
+/** GLOBALES **/
+.contenedor {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.trabajos__contenedor {
+  max-width: 40%;
+  height: 90%;
+  margin: 5rem auto;
+  border: 0.6rem solid;
+  align-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+/** Utilidades **/
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+/** HEADER **/
+.header {
+  background-image: url(../IMG/woman-1869208_1280.jpg);
+  height: 45rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: auto 20rem;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-position: right;
+  }
+}
+.barra {
+  padding-top: 4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .logo {
+    width: 20%;
+  }
+}
+.logo {
+  width: 100%;
+}
+
+.navegacion {
+  flex-direction: column;
+  flex-direction: row;
+  margin-bottom: 12rem;
+}
+.navegacion .navegacion__link {
+  color: var(--blanco);
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .navegacion {
+    display: flex;
+    gap: 2rem;
+  }
+}
+.boton {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  color: var(--blanco);
+  text-align: center;
+  padding: 0.3rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  display: inline-block;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+.boton__principal {
+  background-color: var(--negro);
+  margin-bottom: 2rem;
+}
+
+.contenido-principal {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  border-bottom: 6px solid var(--gris);
+}
+
+@media only screen and (max-width: 768px) {
+  .contenido-principal {
+    display: block;
+  }
+}
+.articulo {
+  border-bottom: 0.4rem solid var(--gris);
+  margin-bottom: 2rem;
+}
+.articulo .articulo__imagen {
+  width: 70%;
+}
+.articulo .articulo__texto h3 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.articulo .articulo:last-of-type {
+  border-bottom: 0;
+}
+
+.testis {
+  margin: 12rem auto;
+}
+.testis .testi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testis .testi p {
+  text-align: center;
+  line-height: 2;
+}
+.testis .testi .iconos-testi {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--negro);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: var(--negro);
+}
+.footer img {
+  margin-left: 12rem;
+}
+@media only screen and (max-width: 768px) {
+  .footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+.copy {
+  text-align: center;
+  color: var(--blanco);
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .sobreMi {
+    display: flex;
+  }
+}
+.sobreMi {
+  gap: 2rem;
+  align-items: center;
+  margin: 10rem 0 10rem 0.1rem;
+}
+.sobreMi .sobreMi__foto {
+  size: 30%;
+  margin: 8rem 1rem 8rem 8rem;
+}
+.sobreMi .sobreMi__texto {
+  margin: 0.5rem;
+}
+
+.trabajos-contenedor {
+  margin: 8rem;
+}
+.trabajos-contenedor .trabajos__foto {
+  width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  .trabajos-contenedor {
+    margin: 1rem;
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .trabajos__foto {
+    margin: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .trabajos__texto {
+    font-size: 16px;
+  }
+}
+.contactoBG {
+  background-image: url(../IMG/girl-2120196_1920.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem;
+}
+.formulario .campo {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+.formulario .campo .campo__label {
+  flex: 0 0 9rem;
+  text-align: right;
+}
+.formulario .campo .campo__field {
+  flex: 1;
+  border: 1px solid gray;
+}
+.formulario .campo .campo__field--textarea {
+  height: 20rem;
+}/*# sourceMappingURL=styles.css.map */

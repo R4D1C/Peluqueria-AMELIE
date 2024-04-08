@@ -12,10 +12,12 @@
     <!--Finaliza BS-->
     <link rel="preload" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/normalize.css">
-    <link rel="preload" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preload" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
 </head>
+
 <body>
+    
     <header class="header container-fluid">
         <div class="container-fluid">
             <div class="barra container-fluid">
@@ -30,28 +32,70 @@
             </div>
         </div>
     </header>
-    
-    <div class="container fuente principal">
-        <main class="Destacado">
-            <h3>Trabajo Destacado</h3>
-            <article class="articulo">
-                <div>
-                    <picture>
-                        <img class="articulo__imagen" src="./IMG/corte2.jpg" alt="corte">
-                    </picture>
+
+    <main>
+        <div class="container contenido-principal fuente">
+            <div>
+                <h3>Trabajo Destacado</h3>
+                <article class="articulo">
+                    <div>
+                        <picture>
+                            <img class="articulo__imagen" src="./IMG/corte2.jpg" alt="corte">
+                        </picture>
+                    </div>
+                    <div class="articulo__texto">
+                        <h3>Último trabajo Destacado</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim eius nostrum aperiam accusamus, id voluptatibus necessitatibus explicabo</p>
+                        <a class="boton boton__principal" href="./Page/TrabajoDestacado.html">mas info</a>
+                    </div>
+                </article>
+            </div>
+        
+            <aside class="aside">
+                <h3>Más Trabajos Aquí</h3>
+                <a class="boton boton__principal" href="./Page/trabajos.html">Ver Más</a>
+            </aside>
+        </div>
+
+        <div class="container mx-auto testis row">
+            <section class="testi col-md">
+                <H3>Nombre 1</H3>
+                <div class="iconos-testi">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg>
                 </div>
-                <div class="articulo__texto">
-                    <h4>Último trabajo Destacado</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim eius nostrum aperiam accusamus, id voluptatibus necessitatibus explicabo</p>
-                    <a class="boton boton__principal" href="./Page/TrabajoDestacado.html">mas info</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur doloremque suscipit id pariatur incidunt a impedit est laudantium obcaecati.</p>
+            </section>
+
+            <section class="testi col-md">
+                <h3>Nombre 2</h3>
+                <div class="iconos-testi">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg>
                 </div>
-            </article>
-        </main>
-        <aside class="aside">
-            <h3>Más Trabajos Aquí</h3>
-            <a class="boton boton__principal" href="./Page/trabajos.html">Ver Más</a>
-        </aside>
-    </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur doloremque suscipit id pariatur incidunt a impedit est laudantium obcaecati.</p>
+            </section>
+
+            <section class="testi col-md">
+                <h3>Nombre 3</h3>
+                <div class="iconos-testi">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="65" height="65" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur doloremque suscipit id pariatur incidunt a impedit est laudantium obcaecati.</p>
+            </section>
+        </div>
+    </main>
+
     <footer class="footer container-fluid">
         <div class="container-fluid">
             <div class="barra">
