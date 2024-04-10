@@ -151,6 +151,7 @@ h3 {
 }
 
 .contenido-principal {
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   -moz-column-gap: 4rem;
@@ -244,28 +245,76 @@ h3 {
 }
 
 .trabajos-contenedor {
-  margin: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 8rem 5%;
+  gap: 4rem;
+}
+.trabajos-contenedor .item1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.trabajos-contenedor .item2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.trabajos-contenedor .item3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.trabajos-contenedor .item4 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.trabajos-contenedor .item2 .trabajos__foto, .trabajos-contenedor .item3 .trabajos__foto {
+  display: block;
+  width: 60%;
+  min-width: 20%;
+  margin: 1rem auto;
+}
+.trabajos-contenedor .contenedor1, .trabajos-contenedor .contenedor2 {
+  display: flex;
+  margin: 1rem;
 }
 @media only screen and (max-width: 768px) {
-  .trabajos-contenedor .trabajos-contenedor {
-    margin: 1rem;
+  .trabajos-contenedor .contenedor1, .trabajos-contenedor .contenedor2 {
     display: block;
   }
 }
-.trabajos-contenedor .trabajos__foto {
-  width: 20%;
-}
 @media only screen and (max-width: 768px) {
-  .trabajos-contenedor .trabajos__foto {
-    margin: 1rem;
+  .trabajos-contenedor .item1 .trabajos__foto, .trabajos-contenedor .item4 .trabajos__foto, .trabajos-contenedor .item3 .trabajos__foto, .trabajos-contenedor .item4 .trabajos__foto {
+    display: block;
+    width: 60%;
+    min-width: 20%;
+    margin: 1rem auto;
   }
 }
+.trabajos-contenedor .borde {
+  border: 0.1rem solid gray;
+}
 @media only screen and (max-width: 768px) {
-  .trabajos-contenedor .trabajos__texto {
-    font-size: 16px;
+  .trabajos-contenedor .borde {
+    margin: 2rem auto;
   }
+}
+.trabajos-contenedor .sombra {
+  box-shadow: 5px 5px 15px gray;
+}
+.trabajos-contenedor h2 {
+  margin: 0.5rem;
+}
+.trabajos-contenedor .trabajos__texto {
+  margin: 0.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .trabajos-contenedor {
+    margin: 1rem;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 .contactoBG {
   background-image: url(../IMG/girl-2120196_1920.jpg);
   height: 40rem;
