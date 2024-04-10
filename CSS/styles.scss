@@ -182,7 +182,7 @@ $size-lg: 1200px;
     margin-bottom: 2rem;
 
     .articulo__imagen {
-        width: 70%;
+        width: 50%;
     }
 
     .articulo__texto {
@@ -197,8 +197,10 @@ $size-lg: 1200px;
     }
 }
 
+// TESTIMONIAL
+
 .testis {
-    margin: 8rem auto;
+    margin: 16rem auto;
 
     h3 {
         text-align: center;
@@ -211,20 +213,39 @@ $size-lg: 1200px;
 
         p {
             text-align: center;
-            line-height: 2;
+            line-height: 1.5;
+            font-size: 2.5rem;
         }
 
-        .iconos-testi {
+        .icono-testi1, .icono-testi2, .icono-testi3 {
             height: 15rem;
             width: 15rem;
-            background-color: var(--negro);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: auto 20rem;
+            position: relative;
+            //background-color: var(--negro);
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
+        .icono-testi1 {
+            background-image: url(../IMG/testi1.jpg);
+        }
+
+        .icono-testi2 {
+            background-image: url(../IMG/testi2.jpg);
+        }
+
+        .icono-testi3 {
+            background-image: url(../IMG/testi3.jpg);
+        }
     }
 }
+
+// FOOTER
 
 .footer{
     background-color: var(--negro);
@@ -253,7 +274,7 @@ $size-lg: 1200px;
 // Sobre Mi
 
 .sobreMi {
-    display: flex;
+    display: block;
     gap: 2rem;
     margin: 10rem auto;
 
@@ -262,12 +283,21 @@ $size-lg: 1200px;
     }
 
     .sobreMi__foto {
-        size: 30%;
-        margin: 8rem 1rem 8rem 8rem;
+        background-image: url(../IMG/sobremi.jpg);
+        height: 40rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: auto 20rem;
+        position: relative;
     }
 
     .sobreMi__texto {
-        margin: .5rem;
+        margin: 2rem;
+        font-size: 2.5rem;
+
+        @media only screen and (max-width: $size-md) {
+            font-size: 1.6rem;
+        }
     }
 }
 
@@ -342,6 +372,11 @@ $size-lg: 1200px;
 
     h2 {
         margin: .5rem;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2rem;
     }
 
     .trabajos__texto {

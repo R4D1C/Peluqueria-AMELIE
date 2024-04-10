@@ -169,7 +169,7 @@ h3 {
   margin-bottom: 2rem;
 }
 .articulo .articulo__imagen {
-  width: 70%;
+  width: 50%;
 }
 .articulo .articulo__texto h3 {
   margin-top: 1rem;
@@ -180,7 +180,7 @@ h3 {
 }
 
 .testis {
-  margin: 8rem auto;
+  margin: 16rem auto;
 }
 .testis h3 {
   text-align: center;
@@ -192,16 +192,29 @@ h3 {
 }
 .testis .testi p {
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
+  font-size: 2.5rem;
 }
-.testis .testi .iconos-testi {
+.testis .testi .icono-testi1, .testis .testi .icono-testi2, .testis .testi .icono-testi3 {
   height: 15rem;
   width: 15rem;
-  background-color: var(--negro);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: auto 20rem;
+  position: relative;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.testis .testi .icono-testi1 {
+  background-image: url(../IMG/testi1.jpg);
+}
+.testis .testi .icono-testi2 {
+  background-image: url(../IMG/testi2.jpg);
+}
+.testis .testi .icono-testi3 {
+  background-image: url(../IMG/testi3.jpg);
 }
 
 .footer {
@@ -227,7 +240,7 @@ h3 {
 }
 
 .sobreMi {
-  display: flex;
+  display: block;
   gap: 2rem;
   margin: 10rem auto;
 }
@@ -237,11 +250,21 @@ h3 {
   }
 }
 .sobreMi .sobreMi__foto {
-  size: 30%;
-  margin: 8rem 1rem 8rem 8rem;
+  background-image: url(../IMG/sobremi.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: auto 20rem;
+  position: relative;
 }
 .sobreMi .sobreMi__texto {
-  margin: 0.5rem;
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .sobreMi .sobreMi__texto {
+    font-size: 1.6rem;
+  }
 }
 
 .trabajos-contenedor {
@@ -302,6 +325,10 @@ h3 {
 }
 .trabajos-contenedor h2 {
   margin: 0.5rem;
+  font-size: 3rem;
+}
+.trabajos-contenedor p {
+  font-size: 2rem;
 }
 .trabajos-contenedor .trabajos__texto {
   margin: 0.5rem;
