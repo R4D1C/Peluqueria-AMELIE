@@ -431,4 +431,10 @@ $size-lg: 1200px;
             height: 20rem;
         }
     }
+}   
+
+@media only screen and (max-width: $size-md) {
+    .formulario {
+        padding: 1rem;
+    }
 }

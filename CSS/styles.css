@@ -374,4 +374,10 @@ h3 {
 }
 .formulario .campo .campo__field--textarea {
   height: 20rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .formulario {
+    padding: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
