@@ -221,6 +221,11 @@ h3 {
   background-image: url(../IMG/testi3.jpg);
 }
 
+@media only screen and (max-width: 768px) {
+  .testis {
+    margin: 4rem auto;
+  }
+}
 .footer {
   background-color: var(--negro);
 }

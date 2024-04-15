@@ -249,6 +249,12 @@ $size-lg: 1200px;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .testis {
+        margin: 4rem auto;
+    }
+}
+
 // FOOTER
 
 .footer{
