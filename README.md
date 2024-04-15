@@ -1,5 +1,6 @@
 Hola profes, dejo algunas anotaciones de la entrega:
 
+-La página ya cuenta con contenido propio y no lorems.
 -Añadí las keywords pedidas en todas las páginas.
 -También añadí descripción y logo en todas las páginas. Estas y la anterior corresponden a las líneas 6, 7 y 9 de cada archivo HTML.
 -Todas las páginas son responsive en la mayoría de dispositivos (No probé en todos, pero se ve bien en todas las resoluciones).
