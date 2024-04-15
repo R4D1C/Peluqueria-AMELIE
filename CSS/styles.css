@@ -139,10 +139,14 @@ h3 {
   font-weight: 700;
   border: none;
   display: inline-block;
+  transition: 0.3s;
 }
 
 .boton:hover {
   cursor: pointer;
+  font-size: 2.2;
+  color: var(--blanco);
+  background-color: gray;
 }
 
 .boton__principal {
