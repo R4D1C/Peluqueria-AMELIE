@@ -29,6 +29,8 @@ html {
 body {
     font-size: 1.6rem;
     line-height: 2;
+    background: rgb(194,194,194);
+    background: linear-gradient(0deg, rgba(194,194,194,1) 0%, rgba(255,255,255,1) 50%, rgba(194,194,194,1) 100%);
 }
 
 img {
@@ -197,7 +199,7 @@ $size-lg: 1200px;
     }
 
     .articulo:last-of-type {
-        border-bottom: 0;
+        border-bottom: none;
     }
 }
 
@@ -413,8 +415,8 @@ $size-lg: 1200px;
 }
 
 .formulario {
-    background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
+    background: rgb(231, 231, 231);
+    margin: -5rem auto 2rem auto;
     width: 95%;
     padding: 5rem;
 
