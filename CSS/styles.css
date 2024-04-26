@@ -278,6 +278,27 @@ h3 {
   }
 }
 
+.trabajoDestacado {
+  display: flex;
+  margin: 8rem auto;
+  gap: 0;
+}
+.trabajoDestacado .trabajoDestacadoFoto {
+  max-width: 80%;
+}
+.trabajoDestacado .trabajoDestacadoTexto {
+  font-size: 2.6rem;
+  margin: 3rem auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .trabajoDestacado {
+    display: block;
+  }
+  .trabajoDestacado .trabajoDestacadoTexto {
+    font-size: 1.6rem;
+  }
+}
 .trabajos-contenedor {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

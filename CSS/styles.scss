@@ -313,6 +313,33 @@ $size-lg: 1200px;
     }
 }
 
+// Trabajo Destacado
+
+.trabajoDestacado {
+    display: flex;
+    margin: 8rem auto;
+    gap: 0;
+
+    .trabajoDestacadoFoto {
+        max-width: 80%;
+    }
+
+    .trabajoDestacadoTexto {
+        font-size: 2.6rem;
+        margin: 3rem auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .trabajoDestacado {
+        display: block;
+
+        .trabajoDestacadoTexto {
+            font-size: 1.6rem;
+        }
+    }
+}
+
 // Trabajos
 
 .trabajos-contenedor {
